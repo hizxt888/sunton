@@ -74,6 +74,7 @@ export default {
       var ctx = uni.createCanvasContext("canvas", this);
       await this.drawImage(ctx, imageModel.path, 0, 0, imageModel.width, imageModel.height);
 
+
       var position = this.imagePosition[this.show.index];
       var imageWidth = imageModel.width / 4;
       var imageHeight = imageModel.width / 4;
@@ -86,8 +87,11 @@ export default {
         left = imageModel.width - imageWidth - left;
       }
 
+      ctx.setFillStyle('#FFFFFF');
+      ctx.fillRect(left, top, imageWidth, imageHeight);
+
       var qrcode = await this.getQrcodeUrl(this.configModel.register_url);
-      await this.drawImage(ctx, qrcode, left, top, imageWidth, imageHeight);
+      await this.drawImage(ctx, qrcode, left + 10, top + 10, imageWidth - 20, imageHeight - 20);
 
       uni.canvasToTempFilePath({
         width: imageModel.width,
