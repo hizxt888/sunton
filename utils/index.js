@@ -184,7 +184,7 @@ export default {
             case 1003:
             case 1201:
                 userModel.removeUserModel();
-                uni.redirectTo({url: '/pages/login/index'});
+                uni.reLaunch({url: '/pages/login/index'});
                 break;
 
             case 1:

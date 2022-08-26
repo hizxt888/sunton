@@ -90,7 +90,11 @@
 		<!-- 分享蒙层 -->
 		<view class="mc all-col" v-if="showMC">
 			<view class="mc-con all-col">
-				<image class="mc-con-close" @click="tapColseMC" src="/static/images/users/user-mj-close.png" mode="aspectFit"></image>
+				<image
+            class="mc-con-close"
+            @click="tapColseMC"
+            src="/static/images/users/user-mj-close.png"
+            mode="aspectFit"></image>
 				<view class="mc-con-a">{{ $t('users.team.tip7') }}</view>
 				<view class="mc-con-code">
 					<view class="mc-con-codeImg">
