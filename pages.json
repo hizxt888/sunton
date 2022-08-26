@@ -1,0 +1,174 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		}, // 首页
+		{
+			"path": "pages/goods/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 商品列表
+		{"path": "pages/goods/details"}, // 商品详情
+		{"path": "pages/goods/order"}, // 购买创建订单确认页
+		{
+			"path": "pages/community/promotions",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 促销活动
+		{
+			"path": "pages/shares/index"
+		}, // shares
+		{
+			"path": "pages/community/official",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 官方精选
+		{
+			"path": "pages/community/fine",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 用户精选
+		{
+			"path": "pages/community/details",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 社区详情页
+		{
+			"path": "pages/community/index"
+		}, // 社区
+		{
+			"path": "pages/community/release"
+		}, // 发布一个帖子
+		{
+			"path": "pages/community/post-comment"
+		},
+
+		/*用户相关*/
+		{
+			"path": "pages/users/questions/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 常见问题及解答
+		{"path": "pages/users/team/index"}, // 我的团队
+		{
+			"path": "pages/users/product/certificate"
+		}, // 产品证书
+		{
+			"path": "pages/users/product/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 我的产品
+
+		{"path": "pages/users/wallet/evidence"}, // 提交充值凭证
+		{"path": "pages/users/wallet/record"}, // 交易记录
+		{"path": "pages/users/wallet/cash-out"}, // 套现
+		{"path": "pages/users/wallet/deposit"}, // 充值
+		{"path": "pages/users/wallet/password"}, // 绑定支付密码
+		{"path": "pages/users/wallet/bind-address"}, // 绑定钱包地址
+		{
+			"path": "pages/users/wallet/logs",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 钱包记录
+		{
+			"path": "pages/users/rankingList/rankingList",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/users/bindPay/bindPay",
+			"style" :{
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/users/personal/index",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/users/teamDetail/teamDetail",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/users/switchLanguage/switchLanguage",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/users/wallet/mybill",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, // 我的记录
+		{"path": "pages/users/wallet/index"}, // 我的钱包
+		{"path": "pages/users/about"}, // 关于我们
+		{"path": "pages/users/whitepaper/index"}, // 白皮书
+		{"path": "pages/users/index"}, // 个人中心
+		{"path": "pages/login/register"}, // 注册
+		{"path": "pages/login/forget-pas"}, // 忘记密码
+		{"path": "pages/login/index"} // 登录页
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#180E36",
+		"backgroundColor": "#180E36",
+		"navigationStyle":"custom",
+		"onReachBottomDistance": 50,
+		"enablePullDownRefresh" : false,
+		"bounce" : "none",
+		"app-plus":{
+			"titleNView": false,
+			"scrollIndicator": "none",
+			"background": "#180E36",
+			"bounceBackground": "#180E36",
+			"animationType": "slide-in-right"
+		}
+	},
+
+	"tabBar": {
+		"borderStyle": "#0D2F94",
+		"backgroundColor": "#0D2F94",
+		"color": "#749BDE",
+		"selectedColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home1.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/users/index",
+				"iconPath": "static/images/tabbar/my.png",
+				"selectedIconPath": "static/images/tabbar/my1.png",
+				"text": ""
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "sunton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.4.11",
+    "crypto-js": "^4.1.1",
+    "echarts": "^5.3.0",
+    "echarts-gl": "^2.0.8",
+    "jsencrypt": "^3.2.1",
+    "qrcode": "^1.5.1",
+    "tki-qrcode": "^0.1.6",
+    "uview-ui": "^2.0.24",
+    "vue-i18n": "^8.27.0",
+    "vue-qrcode": "^2.0.0"
+  }
+}

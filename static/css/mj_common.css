@@ -1,0 +1,40 @@
+image{
+	display: block;
+}
+/* 1  横竖 排列*/
+.all-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.all-col {
+	display: flex;
+	flex-direction: column
+}
+
+
+
+/* 2.文字 */
+
+.com-text-one {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	/* 以下 代码 主要只为了适配 scroll-view 中换行问题 */
+	white-space: normal !important;
+}
+
+.com-text-two {
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	/* 以下 代码 主要只为了适配 scroll-view 中换行问题 */
+	white-space: normal !important;
+}
